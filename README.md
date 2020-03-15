@@ -1,5 +1,8 @@
 # myLatexNote
-customSymbol.tex: latex学习笔记之自定义字体符号命令
+## 编译环境
+TexLive 2019  
+TeXstudio 2.12.22  
+使用XeLaTeX 编译构建customSymbol.tex(说明: latex学习笔记之自定义字体符号命令)
 ## 字体属性的可选值及其说明
 编码 | 字族 | 序列 | 形状 | 尺寸
 -|-|-|-|-
