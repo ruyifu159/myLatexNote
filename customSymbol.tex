@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper,openany]{article}
+
+% 提供中文环境的宏包
+\usepackage{ctex}
+% 提供多种数学公式环境以及许多相关的排版命令，比如mathcal命令
+\usepackage{amsmath}
+% 提供花体字母符号的书写格式
+\usepackage{mathrsfs}
+% 自定义字体符号样式的书写格式
+% \usefont{编码}{字族}{序列}{形状}
+% \fonteneoding{编码}\fontfmaily{字族}\fontseries{序列}\fontshaPe{形状}\ fontsize{尺寸}{行距}\selectfont
+\newcommand{\cusmathcal}[1]{\usefont{OMS}{cmsy}{m}{n} #1}
+\newcommand{\cusmathcall}[1]{\fontencoding{OMS}\fontfamily{cmsy}\selectfont #1}
+
+\begin{document}
+	
+\noindent 自定义数学符号书写样式：\\
+{\cusmathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}} \\\\
+\noindent 自定义2数学符号书写样式：\\
+{\cusmathcall{ABCDEFGHIJKLMNOPQRSTUVWXYZ}} \\\\
+\noindent
+amsmath\ 宏包提供的一种标准数学符号书写样式:\\ $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  \\\\
+\noindent
+mathrsfs\ 宏包提供的一种花体数学符号书写样式:\\ $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  \\\\
+	
+\end{document}
